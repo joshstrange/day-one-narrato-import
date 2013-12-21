@@ -1,0 +1,16 @@
+{
+  "name": "day-one-narrato-import",
+  "repository": "https://github.com/joshstrange/dayone",
+  "version": "0.0.1",
+  "description": "Importer for text Narrato posts into Day One",
+  "main": "index.js",
+  "scripts": {
+  },
+  "dependencies" : {
+    "dayone"   :  "https://github.com/joshstrange/dayone/tarball/master",
+    "commander":  "*",
+    "path-extra": "*"
+  },
+  "author": "",
+  "license": "BSD-2-Clause"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "annotations": [
+      {
+        "key": "core.text",
+        "uuid": "4B363206-37FD-479B-837C-3B005EC6A530",
+        "value": {
+          "entities": {
+            "hashtags": [
+
+            ]
+          },
+          "text": "This is a test for Narrato to Day One"
+        }
+      }
+    ],
+    "created": 1384743193.0,
+    "created_offset": -18000,
+    "day_string": "2013-11-17",
+    "is_deleted": false,
+    "modified": 1384743280.497,
+    "range_token": "20131118025313000860db35",
+    "timezone": "America/New_York",
+    "type": "co.narrato.journal.textpost",
+    "uuid": "625A7E89-970D-4F34-8D56-2C120860DB35",
+    "version": "2090577"
+  }
+]
