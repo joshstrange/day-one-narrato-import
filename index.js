@@ -21,7 +21,6 @@ program
   .option('-d, --directory [value]', "Where is your Day One synced to? Here are some possible locations:\n"+locations.join('\n'));
 
 
-
 program
    .command('import <file>')
    .description('run import on narrato export file')
@@ -35,17 +34,14 @@ program
 			});
    		var items = require(file);
 			items.forEach(function(item){
-				item.annotations.forEach(function(annotation){
-					if(annotation.key == 'core.text')
-					{
-						var entry = new DayOneEntry();
-						entry.entryText = annotation.value.text;
-				    entry.creationDate = new Date(item.created*1000);
-						dayone.save(entry, function(error) {
-						    console.log('Entry Imported!');
-						});
-					}
-				});
+				if(item.type = 'co.narrato.journal.textpost') {
+					var entry = new DayOneEntry();
+					entry.entryText = item.text;
+					entry.creationDate = new Date(item.created);
+					dayone.save(entry, function(error) {
+						console.log('Entry Imported!');
+					});
+				}
 			});
    });
 
