@@ -4,11 +4,11 @@
   "version": "0.0.1",
   "description": "Importer for text Narrato posts into Day One",
   "main": "index.js",
-  "scripts": {
-  },
-  "dependencies" : {
-    "dayone"   :  "https://github.com/joshstrange/dayone/tarball/master",
-    "commander":  "*",
+  "scripts": {},
+  "dependencies": {
+    "commander": "*",
+    "dayone": "https://github.com/joshstrange/dayone/tarball/master",
+    "googlemaps": "^1.0.2",
     "path-extra": "*"
   },
   "author": "",
