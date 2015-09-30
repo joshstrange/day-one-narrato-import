@@ -49,7 +49,7 @@ program
 					dayone.save(entry, function(error) {
 						console.log('Entry Imported!');
 					});
-				} else if(item.type == 'co.narrato.journal.checkinpost') {
+				} else if(item.type == 'co.narrato.journal.checkinpost' || item.type == 'com.foursquare.checkin') {
 
 
 					var lat = item.location.lat;
